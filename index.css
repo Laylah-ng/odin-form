@@ -2,8 +2,9 @@
   font-family: Norse-bold;
   src: url(font/Norse-Bold.otf);
 }
-:root{
-  --mint-green:rgb(182, 221, 149);
+:root {
+  --mint-green: rgb(224, 243, 209);
+  --leaf-green: #596d48;
 }
 
 .leaf-image {
@@ -15,8 +16,6 @@
   position: fixed;
   top: 0;
   left: 0;
-  display:flex;
-  align-items: center;
   
 }
 .plain {
@@ -26,7 +25,8 @@
   position: fixed;
   top: 0;
   right: 0;
-  padding-left: 30px;
+  padding-top: 80px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -34,31 +34,80 @@ body {
   width: 100%;
   display: flex;
 }
-h1{
-    font-family: Norse-bold;
-    color: var(--mint-green);
-    font-size: 4em
+h1 {
+  font-family: Norse-bold;
+  color: var(--mint-green);
+  font-size: 4em;
 }
-.odin-logo{
-    height: 60px;
-    width: 50px;
+.odin-logo {
+  height: 60px;
+  width: 50px;
 }
-.logo-container{
-    height: 80px;
-    background-color: black;
-    opacity: .6;
-    display: flex;
-    align-items: center;
-    justify-content: centergit;
-    width: 100%;
+.logo-container {
+  height: 80px;
+  background-color: black;
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
 }
 
-form{
-    display: flex;
-    flex-direction: row;
-    column-gap: 25px;
+form {
+  display: flex;
+  flex-direction: row;
+  column-gap: 25px;
 }
-.name{
-    display: flex;
-    flex-direction: column;
+.name {
+  display: flex;
+  flex-direction: column;
+}
+.plain p:nth-of-type(-n + 3):not(:last-of-type) {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-left: 50px;
+}
+.plain p:nth-of-type(2) {
+  font-style: italic;
+}
+.plain p:nth-last-of-type(1) {
+  font-weight: bold;
+}
+button {
+  background-color: var(--leaf-green);
+  margin-top: 20px;
+  margin-left: 50px;
+  height: 35px;
+  width: 200px;
+  color: var(--mint-green);
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 7px;
+}
+.log-in {
+  color: var(--leaf-green);
+  text-decoration: none;
+}
+.box{
+    background-color: #f1faea;
+    height: 260px;
+    padding-top: 8px;
+    padding-left: 50px;
+    width: 100%;
+    box-shadow: 0px 5px 5px black;
+
+}
+.acct{
+    padding-left: 50px;
+}
+
+input{
+    height: 25px;
+    border: 1px solid grey(189, 18, 18);
+    outline: blue;
+}
+label{
+    margin-top: 15px;
 }
