@@ -2,6 +2,10 @@
   font-family: Norse-bold;
   src: url(font/Norse-Bold.otf);
 }
+:root{
+  --mint-green:rgb(182, 221, 149);
+}
+
 .leaf-image {
   background-image: url(images/leaf.jpg);
   height: 100%;
@@ -11,18 +15,50 @@
   position: fixed;
   top: 0;
   left: 0;
+  display:flex;
+  align-items: center;
+  
 }
 .plain {
-  background-color: rgb(182, 221, 149);
+  background-color: var(--mint-green);
   height: 100%;
   width: 70%;
   position: fixed;
   top: 0;
   right: 0;
+  padding-left: 30px;
 }
 
 body {
   height: 100%;
   width: 100%;
   display: flex;
+}
+h1{
+    font-family: Norse-bold;
+    color: var(--mint-green);
+    font-size: 4em
+}
+.odin-logo{
+    height: 60px;
+    width: 50px;
+}
+.logo-container{
+    height: 80px;
+    background-color: black;
+    opacity: .6;
+    display: flex;
+    align-items: center;
+    justify-content: centergit;
+    width: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+}
+.name{
+    display: flex;
+    flex-direction: column;
 }
